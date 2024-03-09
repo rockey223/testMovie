@@ -14,12 +14,12 @@ require("dotenv").config({ path: "config/config.env" });
 //Connecting to database
 connectDatabase();
 
-const server = app.listen(process.env.PORT, () => {
+const server = app.listen(4000, () => {
   console.log(
     `Server is working on localhost` +
-      process.env.PORT +
+      4000 +
       ` in ` +
-      process.env.NODE_ENV +
+      "Development" +
       ` mode.`
   );
 });
