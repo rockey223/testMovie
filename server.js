@@ -14,15 +14,15 @@ require("dotenv").config({ path: "config/config.env" });
 //Connecting to database
 connectDatabase();
 
-const server = app.listen(4000, () => {
-  console.log(
-    `Server is working on localhost` +
-      4000 +
-      ` in ` +
-      "Development" +
-      ` mode.`
-  );
-});
+// const server = app.listen(4000, () => {
+//   console.log(
+//     `Server is working on localhost` +
+//       4000 +
+//       ` in ` +
+//       "Development" +
+//       ` mode.`
+//   );
+// });
 
 //Handle unhandled promise rejections'
 process.on("unhandledRejection", (err) => {
