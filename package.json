@@ -1,0 +1,25 @@
+{
+  "name": "syvar-portfolio",
+  "version": "0.0.1",
+  "description": "syvar tech",
+  "main": "server.js",
+  "scripts": {
+    "build": "netlify deploy --prod",
+    "start": "node server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon -L server.js",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon -L server.js"
+  },
+  "author": "Syvar Tech",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.2.1",
+    "nodemailer": "^6.9.8",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
