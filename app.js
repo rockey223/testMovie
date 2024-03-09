@@ -20,6 +20,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(errorMiddleware);
 
 //contact us router
-app.use("/.netlify/functions", contactRouter);
+app.use("/", contactRouter);
 
 module.exports.handler = serverless(app);
